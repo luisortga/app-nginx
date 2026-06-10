@@ -6,6 +6,12 @@ l1 = 'fastest'
 l2 = 'fast'
 l3 = ['core 1', 'core 2', 'core 3', 'core 4']
 
+# cache hit
+# cache miss
+
+def hit(core: str):
+    pass
+
 async def cache(core: str, delay: float):
     print('way to multicore')
     await asyncio.sleep(delay)
