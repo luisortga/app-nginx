@@ -15,7 +15,7 @@ async def main():
     
 def querysqlite(parameter: str) -> str:
     time.sleep(16)
-    return '%s' %parameter
+    return f'valid ... {parameter}'
 
 # Ejecutar el programa
 asyncio.run(main())
