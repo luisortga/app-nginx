@@ -15,6 +15,9 @@
         <meta property="og:title:alt" content="portfolio luis Ortega ing. industrial">
 
         <style>
+            body {
+                background: rgba(135, 221, 255, 0.9);
+            }
         </style>
 
 
@@ -23,6 +26,8 @@
     <body>
         <header>
             <h1>Luis Ortega</h1>
+
+            <iframe style="width: 100; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/N3rsuZBp9bo?si=Vd4zqg9SrUGTiuWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <nav>
                 <a href="#xperiencia">Experiencia</a>
@@ -34,7 +39,34 @@
                 >Twitch</a>
             </nav>
         </header>
-        
+
+        <dialog id="dialog">
+            <h1>¿Sabías que puedes abrir una modal así?</h1>
+            <p>Y es totalmente nativo</p>
+            <button id="breaking">Cerrar modal</button>
+        </dialog>
+
+        <button id="show">Ver más Informacion</button>
+
+        <script>
+            //
+            window.show.addEventListener('click', () => {
+                window.dialog.showModal()
+            })
+
+            // open: es un metodo nativo de window
+            window.breaking.addEventListener('click', ()=> {
+                window.dialog.close()
+            })
+
+        </script>
+
+        <audio controls src="musica vikinga.flac"></audio>
+
+        <video autoplay muted src="Apollo PROJECT EVO.mp4"></video>
+        <!-- autoplay -->
+         <!-- poster="poster_del_video.jpg" -->
+
         <main>
                 
         <!--h1 Titulo principal-->
@@ -99,6 +131,21 @@
                     <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
                 </footer>
             </article>
+
+        </section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details open>
+                <summary>¿Que estudios tienes?</summary>
+                <p>Mi lenguaje de programación favorito es Python debido a su simplicidad y versatilidad. y mis estudios es una ingeniería en informática durante 5 años.</p>
+            </details>
+
+            <details>
+                <summary>¿Que proyectos has realizado?</summary>
+                <p>He desarrollado una página web personal utilizando HTML, CSS y JavaScript, implementando buenas prácticas de desarrollo web.</p>
+            </details>
+        <section>
+
         </section>
 
         <section>
@@ -110,14 +157,14 @@
                     <legend>Informacion personal</legend>
                     <div>
                         <label for="name">Nombre:
-                            <input type="text" id="name" name="name" placeholder="luis ortega">
+                            <input type="text" id="name" name="name" placeholder="luis ortega" required>
                         </label>
                     </div>
 
                         <label for="">Email:
                             <input type="email"
                             name="name"
-                            placeholder="text@gmail.com">
+                            placeholder="text@gmail.com" required>
                         </label>
                  </fieldset>
 
@@ -125,12 +172,51 @@
                     <legend>Informacion adicional</legend>
                     <div>
                         <label for="">Telefono</label>
-                        <input type="tel" name="name" placeholder="+1 8003659">
+                        <input type="tel" name="name" placeholder="+1 8003659" required pattern="[0-9]{10}">
                     </div>
                  </fieldset>
-            </form>
+
+                 <fieldset>
+                    <legend>Otros</legend>
+
+                    <div>
+                        <label for="why">¿Por qué quieres contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Duda</option>
+                            <option value="3">Más información</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="terms">¿Aceptas los términos?</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                    </div>
+
+                    <div>
+                        <details id="languages">
+                            <option value="JavaScript"></option>
+                            <option value="Python"></option>
+                            <option value="Java"></option>
+                            <option value="C#"></option>
+                        </details>
+                        <label for="">
+                            ¿Con que lenguaje quieres que te ayude?
+                            <input type="languages" name="languages">
+                        </label>
+                    </div>
+                 </fieldset>
+
+                 <button type="submit">Enviar contacto</button>
+            </form> <!-- form es un contenedor para elementos de formulario, se puede enviar a un servidor -->
         </section>
     </main>
+
+    <!-- loading="lazy" para evitar que carge la imagen si no se está mostrando en pantalla -->
+    <img 
+    style="width: 100%; aspect-ratio:1408/768"
+    loading="lazy"
+    src="python.png" alt="imagen generada por gemini sobre multi processing en python">
 
     <footer>
         Copyright ® 2026 - El portfolio más desarrollado del mundo
@@ -141,25 +227,6 @@
 
     <!-- Div y spam agrupacion de elementos para estilarlos, no tiene significado semantico -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!---->
     </body>
 </html>
