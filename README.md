@@ -5,20 +5,20 @@
 ### NGINX (pronunciado engine-ex) es un software de código abierto y alto rendimiento que funciona como servidor web, proxy inverso, balanceador de carga y caché HTTP. Creado originalmente en 2004 para superar las limitaciones de velocidad de Apache, es la opción preferida de plataformas con alto tráfico como Netflix, NASA y WordPress.com.
 
 > [!NOTE]
-> Aqui hay una nota
+> Puedes dar pullrequest libremente, y agradeceria al respecto
 
 
 > [!TIP]
-> Consejos de nginx
+> puedes subir tus contenedores a el repositorio de dockeHub
 
 
 > [!IMPORTANT]
-> Aviso importante
+> nginx no es necesario especificar un puerto, ya contiene un puerto por defecto
 
 
 > [!WARNING]
-> Aqui tienes una alerta
+> Necesitas espacio libre en disco para crear y correr contenedores ya creados
 
 
 > [!CAUTION]
-> Aqui tines un aviso
+> Necesitas tenes docker desktop instalado
