@@ -10,7 +10,8 @@ l3 = ['core 1', 'core 2', 'core 3', 'core 4']
 # cache miss
 
 def hit(core: str):
-    pass
+    time.sleep(12)
+    print(f'El nuevo nucleo es: {core}')
 
 async def cache(core: str, delay: float):
     print('way to multicore')
