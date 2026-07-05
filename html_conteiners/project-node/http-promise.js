@@ -7,3 +7,6 @@ const server = http.createServer((req, res) => {
     res.end('Hello World')
 })
 
+server.listen(desiredPort, () => {
+    console.log(`server listening on port http://localhost:${desiredPort}`)
+})
