@@ -1,9 +1,7 @@
 
-let count = 1
-
 class Calculadora {
   
-    
+    static count = 1   
     static sumar(a, b) {
     return a + b;
   }
@@ -13,7 +11,8 @@ class Calculadora {
   }
 
   static one_more() {
-    count ++
+    Calculadora.count += 1
+    console.log(`El contador va ${Calculadora.count}`)
   }
 }
 
@@ -21,4 +20,4 @@ class Calculadora {
 console.log(Calculadora.sumar(5, 3));   // 8
 console.log(Calculadora.restar(5, 3));  // 2
 Calculadora.one_more()
-console.log(Calculadora.one_more())
+Calculadora.one_more()
