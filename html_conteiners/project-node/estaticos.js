@@ -10,6 +10,8 @@ class Calculadora {
     return a - b;
   }
 
+  // web socket
+
   static one_more() {
     Calculadora.count += 1
     console.log(`El contador va ${Calculadora.count}`)
