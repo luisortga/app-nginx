@@ -1,13 +1,24 @@
+
+let count = 1
+
 class Calculadora {
-  static sumar(a, b) {
+  
+    
+    static sumar(a, b) {
     return a + b;
   }
 
   static restar(a, b) {
     return a - b;
   }
+
+  static one_more() {
+    count ++
+  }
 }
 
 // Se llama directamente desde la clase, sin crear un objeto
 console.log(Calculadora.sumar(5, 3));   // 8
 console.log(Calculadora.restar(5, 3));  // 2
+Calculadora.one_more()
+console.log(Calculadora.one_more())
