@@ -15,3 +15,7 @@ prometeo.then(resol => {
 }).finally(() => {
     console.log('process final')
 })
+
+async function backTime(time) {
+    return prometeo
+}
