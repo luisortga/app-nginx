@@ -7,7 +7,13 @@ const validateUser = ({ name, age, email }) => {
 
   // call to data base
 
-  throw new ConnectionError("database is not available")
+  try {
+    mongodb.connect()
+  } catch (e) {
+    //
+    //
+    throw new ConnectionError("database is not available")
+  }
 }
 
 class ConnectionError extends Error {}
@@ -29,6 +35,12 @@ try {
   if (e.name === "ConnectionError") {
     // retry after a few seconds
     // showUIModalValidation()
-    setTimeout(() => {})
+    setTimeout(() => {
+      validateUser({ name, age, email })
+    })
+  }
+
+  if (e.name === "ValidationError") {
+    // showUIModelValidation()
   }
 }
