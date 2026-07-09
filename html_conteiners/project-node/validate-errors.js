@@ -26,5 +26,9 @@ const email = null
 try {
   validateUser()
 } catch (e) {
-  console.log(err instanceof Error)
+  if (e.name === "ConnectionError") {
+    // retry after a few seconds
+    // showUIModalValidation()
+    setTimeout(() => {})
+  }
 }
