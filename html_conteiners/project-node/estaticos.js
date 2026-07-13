@@ -27,6 +27,10 @@ class Calculadora {
   }
 }
 
+class Colab {
+  constructor() {}
+}
+
 // Se llama directamente desde la clase, sin crear un objeto
 console.log(Calculadora.sumar(5, 3)) // 8
 console.log(Calculadora.restar(5, 3)) // 2
