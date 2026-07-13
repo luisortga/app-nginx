@@ -13,6 +13,12 @@ class Calculadora {
     return `Heey ${namee}`
   }
 
+  static repeat(listaData) {
+    listaData.forEach((element) => {
+      console.log(element)
+    })
+  }
+
   // web socket
 
   static one_more() {
@@ -26,3 +32,6 @@ console.log(Calculadora.sumar(5, 3)) // 8
 console.log(Calculadora.restar(5, 3)) // 2
 Calculadora.one_more()
 Calculadora.one_more()
+
+let places = ["dunkerque", "munich", "france", "polonia"]
+Calculadora.repeat(places)
