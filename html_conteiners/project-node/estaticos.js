@@ -9,6 +9,7 @@ class Calculadora {
   }
 
   static greeting(namee) {
+    // more implements
     return `Heey ${namee}`
   }
 
