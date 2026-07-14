@@ -6,4 +6,8 @@ export class Subscribers {
     this.actions = actions
     this.final = final
   }
+
+  toString() {
+    return ""
+  }
 }
