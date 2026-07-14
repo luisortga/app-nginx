@@ -11,3 +11,5 @@ export class Subscribers {
     return ""
   }
 }
+// pending
+const sub = new Subscribers("Observer delay", 16)
