@@ -1,6 +1,6 @@
 // init
 
-class Subscribers {
+export class Subscribers {
   constructor(actions, final) {
     /* */
     this.actions = actions
