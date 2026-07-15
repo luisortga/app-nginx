@@ -1,5 +1,5 @@
-import { merge, of } from "rxjs"
-import { map } from "rxjs/operators"
+import { from, merge, of } from "rxjs"
+import { filter, map, reduce, tap } from "rxjs/operators"
 
 const obs1 = of("A").pipe(map(() => "Fuente 1"))
 const obs2 = of("B").pipe(map(() => "Fuente 2"))
