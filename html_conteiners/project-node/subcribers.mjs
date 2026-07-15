@@ -1,19 +1,7 @@
-import { from } from "rxjs"
-import { map, catchError } from "rxjs/operators"
-import fetch from "node-fetch"
+import { merge, of } from "rxjs"
+import { map } from "rxjs/operators"
 
-function getUser(id) {
-  return from(
-    fetch(`https://jsonplaceholder.typicode.com/users/${id}`).then((res) =>
-      res.json(),
-    ),
-  ).pipe(
-    map((user) => ({ id: user.id, name: user.name, email: user.email })),
-    catchError((err) => {
-      console.error("Error fetching user", err)
-      return []
-    }),
-  )
-}
+const obs1 = of("A").pipe(map(() => "Fuente 1"))
+const obs2 = of("B").pipe(map(() => "Fuente 2"))
 
-getUser(1).subscribe((user) => console.log("Usuario:", user))
+merge(obs1, obs2).subscribe(console.log)
