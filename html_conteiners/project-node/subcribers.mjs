@@ -14,3 +14,5 @@ from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     reduce((acc, x) => acc + x, 0),
   )
   .subscribe((result) => console.log("Resultado final:", result))
+
+// Nuevo evento reactivo
