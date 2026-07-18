@@ -16,3 +16,12 @@ from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   .subscribe((result) => console.log("Resultado final:", result))
 
 // Nuevo evento reactivo
+
+from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16])
+  .pipe(
+    filter((x) => x % 2 === 0),
+    tap((x) => console.log("Después del filtro:", x)),
+    map((x) => x * 4),
+    reduce((acc, x) => acc + x, 0),
+  )
+  .subscribe((result) => console.log("Resultado final:", result))
