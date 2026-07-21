@@ -1,9 +1,15 @@
 // begin of project in node
 
+const { parentPort } = require('worker_threads')
 
+parentPort.on('message', n => {
 
-const timer = 16
+    let total = 0
 
-if (timer >= 10) {
-	codeBrians()
-}
+    for (let i = 0; i < n; i++) {
+        total += i
+    }
+
+    parentPort.postMessage(total)
+
+})
