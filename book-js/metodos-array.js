@@ -26,3 +26,13 @@ const numeros = [1, 2, 3]
 numeros.forEach((num) => {
   console.log(num)
 })
+
+// find
+
+const usuarios = [
+  { id: 1, nombre: 'Ana' },
+  { id: 2, nombre: 'Bob' },
+]
+
+const usuario = usuarios.find((u) => u.id === 2)
+// { id: 2, nombre: "Bob" }
