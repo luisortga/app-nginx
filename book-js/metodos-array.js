@@ -19,3 +19,10 @@ const suma = numeros.reduce((acumulador, numero) => acumulador + numero, 0)
 // acumulador = 1, numero = 2 → acumulador = 3
 // acumulador = 3, numero = 3 → acumulador = 6
 // acumulador = 6, numero = 4 → acumulador = 10
+
+// testing forEach
+
+const numeros = [1, 2, 3]
+numeros.forEach((num) => {
+  console.log(num)
+})
