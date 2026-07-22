@@ -36,3 +36,9 @@ const usuarios = [
 
 const usuario = usuarios.find((u) => u.id === 2)
 // { id: 2, nombre: "Bob" }
+
+// Some y Every
+const numeros = [1, 2, 3, 4, 5]
+
+numeros.some((x) => x > 3) // true (al menos uno es > 3)
+numeros.every((x) => x > 0) // true (todos son > 0)
