@@ -1,17 +1,20 @@
-const numeros = [1, 2, 3, 4]
-const duplicados = numeros.map((x) => x * 2)
+const numOne = [1, 2, 3, 4]
+const duplicados = numOne.map((x) => x * 2)
+console.log(duplicados)
 // [2, 4, 6, 8]
 
 // filter
 
-const numeros = [1, 2, 3, 4, 5]
-const pares = numeros.filter((x) => x % 2 === 0)
+const numTwo = [1, 2, 3, 4, 5]
+const pares = numTwo.filter((x) => x % 2 === 0)
+console.log(pares)
 // [2, 4]
 
 // reduce
 
-const numeros = [1, 2, 3, 4]
-const suma = numeros.reduce((acumulador, numero) => acumulador + numero, 0)
+const numThree = [1, 2, 3, 4]
+const suma = numThree.reduce((acumulador, numero) => acumulador + numero, 0)
+console.log(suma)
 // 10
 
 // Desglose:
@@ -35,10 +38,16 @@ const usuarios = [
 ]
 
 const usuario = usuarios.find((u) => u.id === 2)
+console.log(usuario)
 // { id: 2, nombre: "Bob" }
 
 // Some y Every
-const numeros = [1, 2, 3, 4, 5]
+const numFour = [1, 2, 3, 4, 5]
 
-numeros.some((x) => x > 3) // true (al menos uno es > 3)
-numeros.every((x) => x > 0) // true (todos son > 0)
+numFour.some((x) => x > 3) // true (al menos uno es > 3)
+numFour.every((x) => x > 0) // true (todos son > 0)
+
+// with console log
+
+console.log(numFour.some((x) => x > 3))
+console.log(numFour.every((x) => x > 0))
