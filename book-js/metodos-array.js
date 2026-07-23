@@ -71,3 +71,11 @@ console.log(numFour.every((x) => x > 0))
 // Cokies google
 
 /* call stack - call back () => {} - event loop - webApis - heap */
+
+// Render pipeline
+
+const runner = () => {
+  return new Promise((resolve) => {
+    const thrid = setInterval(() => {})
+  })
+}
