@@ -1,3 +1,17 @@
+let queue = 0
+
+const corsair = setInterval(() => {
+  queue += 2
+
+  console.log(`in: ${queue}`)
+
+  if (queue === 16) {
+    console.log('Haz llegado al final.')
+
+    clearInterval(corsair)
+  }
+}, 1000)
+
 const numOne = [1, 2, 3, 4]
 const duplicados = numOne.map((x) => x * 2)
 console.log(duplicados)
@@ -57,17 +71,3 @@ console.log(numFour.every((x) => x > 0))
 // Cokies google
 
 /* call stack - call back () => {} - event loop - webApis - heap */
-
-let queue = 0
-
-const corsair = setInterval(() => {
-  queue += 2
-
-  console.log(`in: ${queue}`)
-
-  if (queue === 16) {
-    console.log('Haz llegado al final.')
-
-    clearInterval(corsair)
-  }
-}, 1000)
