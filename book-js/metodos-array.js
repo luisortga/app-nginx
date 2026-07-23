@@ -51,3 +51,7 @@ numFour.every((x) => x > 0) // true (todos son > 0)
 
 console.log(numFour.some((x) => x > 3))
 console.log(numFour.every((x) => x > 0))
+
+// call stack
+
+// Cokies google
