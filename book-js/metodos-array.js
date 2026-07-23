@@ -76,6 +76,15 @@ console.log(numFour.every((x) => x > 0))
 
 const runner = () => {
   return new Promise((resolve) => {
-    const thrid = setInterval(() => {})
+    let inter = 0
+    const thrid = setInterval(() => {
+      inter++
+
+      if (inter === 4) {
+        console.log('successful')
+      }
+    }, 2000)
   })
 }
+
+async function oneLine() {}
