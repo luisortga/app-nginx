@@ -55,3 +55,19 @@ console.log(numFour.every((x) => x > 0))
 // call stack
 
 // Cokies google
+
+/* call stack - call back () => {} - event loop - webApis - heap */
+
+let queue = 0
+
+const corsair = setInterval(() => {
+  queue += 2
+
+  console.log(`in: ${queue}`)
+
+  if (queue === 16) {
+    console.log('Haz llegado al final.')
+
+    clearInterval(corsair)
+  }
+}, 1000)
