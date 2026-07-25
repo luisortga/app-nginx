@@ -13,3 +13,5 @@ parentPort.on('message', n => {
     parentPort.postMessage(total)
 
 })
+
+// 288 106 0533
