@@ -15,3 +15,4 @@ parentPort.on('message', n => {
 })
 
 // 288 106 0533
+// Solicitud de vigencia de derecho
