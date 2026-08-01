@@ -1,1 +1,2 @@
 pending with code javascript of book miduprogrammer fuctional
+filter map reduce investigar
