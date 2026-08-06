@@ -1,3 +1,4 @@
 node js and django
 lenguajes interprete
 OpenAI
+Sam
