@@ -1,0 +1,1 @@
+const prime = "rick prime"
