@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: mi_servidor_nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html
+      
