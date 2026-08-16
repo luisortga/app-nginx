@@ -7,11 +7,24 @@ const test = setInterval(() => {
   console.log(`Interval counter: ${counter}`)
   if (counter === 8) {
     console.log(`${counter} is final`)
-    console.log(`Sucessful async`)
+    console.log(`Successful async`)
 
     clearInterval(test)
   }
 }, 1000)
+
+
+let customers = 0
+const steps = setInterval(() => {
+  if (customers === 6) {
+    console.log(`Aura`)
+    console.log(`Successful async`)
+  
+    clearInterval(steps)
+  }
+}, 6000)
+
+/* Un setInterval es un mecanismo para ejecutar una función de manera repetitiva a intervalos regulares de tiempo */
 
 // primoridades: 1 sincrono, 2 micro tareas, 3 macro tareas
 
