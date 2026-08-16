@@ -16,6 +16,8 @@ const test = setInterval(() => {
 
 let customers = 0
 const steps = setInterval(() => {
+  customers++
+  console.log(`Other Interval counter: ${customers}`)
   if (customers === 6) {
     console.log(`Aura`)
     console.log(`Successful async`)
