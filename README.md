@@ -5,8 +5,7 @@
 ### NGINX (pronunciado engine-ex) es un software de código abierto y alto rendimiento que funciona como servidor web, proxy inverso, balanceador de carga y caché HTTP. Creado originalmente en 2004 para superar las limitaciones de velocidad de Apache, es la opción preferida de plataformas con alto tráfico como Netflix, NASA y WordPress.com.
 
 > [!NOTE]
-> Puedes dar pullrequest libremente, y agradeceria al respecto
-
+> **NGINX** funciona como un servidor web de alto rendimiento, proxy inverso y balanceador de carga. Utiliza una arquitectura orientada a eventos (asíncrona), lo que le permite manejar miles de conexiones simultáneas con un consumo de memoria extremadamente bajo, a diferencia de los servidores tradicionales basados en hilos como Apache.
 
 > [!TIP]
 > puedes subir tus contenedores a el repositorio de dockeHub
